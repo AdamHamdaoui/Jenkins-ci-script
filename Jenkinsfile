@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Unit Testing..'
-                sh '/usr/bin/mvn compile & test'    
+                sh '/usr/bin/mvn compile & /usr/bin/mvn test'    
             }
         }
         stage('Package') {
